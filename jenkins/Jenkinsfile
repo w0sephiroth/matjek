@@ -8,7 +8,8 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-                sh './jenkins/scripts/deploy.sh' 
+                sh 'rm -rf /home/app/nginx/web/blog/*' 
+				sh 'cp -r ./_site/*  /home/app/nginx/web/blog/'
             }
         }
     }

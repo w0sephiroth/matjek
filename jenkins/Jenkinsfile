@@ -1,21 +1,12 @@
 pipeline {   
-    agent none 
+    agent any 
     stages {
         stage('Build') {
-            agent {
-                docker {
-                    image 'w0sephiroth/myjekyll:3.8'
-                    args '-v $PWD:/srv/jekyll -v /home/app/jekyll/bundle:/usr/local/bundle'
-                }
-            }
             steps {
-			    sh 'pwd'
-				sh 'bundle -v'
-                sh 'jekyll build'
+			    sh 'docker run --rm --volume="$PWD:/srv/jekyll" --volume="/home/app/jekyll/bundle:/usr/local/bundle"  -it w0sephiroth/myjekyll:3.8 jekyll build'
             }
         }
         stage('Deploy') { 
-            agent none
             steps {
                 sh './jenkins/scripts/deploy.sh' 
             }

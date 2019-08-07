@@ -5,7 +5,7 @@ pipeline {
             agent {
                 docker {
                     image 'w0sephiroth/myjekyll:3.8'
-                    args '-v $PWDsrvjekyll -v homeappjekyllbundleusrlocalbundle'
+                    args '-v $PWD:/srv/jekyll -v /home/app/jekyll/bundle:/usr/local/bundle'
                 }
             }
             steps {

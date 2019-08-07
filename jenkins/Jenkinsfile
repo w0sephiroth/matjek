@@ -9,6 +9,8 @@ pipeline {
                 }
             }
             steps {
+			    sh 'pwd'
+				sh 'bundle -v'
                 sh 'jekyll build'
             }
         }

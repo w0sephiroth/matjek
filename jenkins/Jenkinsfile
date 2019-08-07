@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-			    sh 'docker run --rm --volume="/home/app/jenkins/workspace/blog:/srv/jekyll" --volume="/home/app/jekyll/bundle:/usr/local/bundle"  -i w0sephiroth/myjekyll:3.8 jekyll build'
+			    sh 'docker run --rm --volume="/home/app/jenkins/workspace/blog:/srv/jekyll" --volume="/home/app/jekyll/bundle:/usr/local/bundle"  -i w0sephiroth/myjekyll:3.8.1 jekyll build'
             }
         }
         stage('Deploy') { 

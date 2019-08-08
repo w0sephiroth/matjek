@@ -22,7 +22,7 @@ baseurl: ""
 url: "http://47.103.119.80"
 permalink: /:year/:month/:day/:title
 repository: w0sephiroth/w0sephiroth.github.io
-paginate: 2
+paginate: 5
 
 # MatJek specific configurations
 github_profile: "https://github.com/w0sephiroth"

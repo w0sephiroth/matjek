@@ -16,6 +16,8 @@
 title: 专注码砖三十年
 description: > # this means to ignore newlines until "baseurl:"
   Material theme based on <a href="http://materializecss.com">Materialize.css</a> for jekyll sites
+matjek: > # this means to ignore newlines until "baseurl:"
+  fork from <a href="https://github.com/ShawnTeoh/matjek">MatJek</a>
 baseurl: ""
 url: "http://47.103.119.80"
 permalink: /:year/:month/:day/:title
@@ -26,9 +28,10 @@ paginate: 2
 github_profile: "https://github.com/w0sephiroth"
 user: "w0sephiroth"
 user_email: "360924460@qq.com"
-contact_url: "https://goo.gl/tVljbV"
-google_tracking_id: "UA-96359860-1"
-google_site_verification: "UA-96359860-1"
+#contact_url: "https://goo.gl/tVljbV"
+contact_url: "http://47.103.119.80"
+#google_tracking_id: "UA-96359860-1"
+#google_site_verification: "UA-96359860-1"
 disqus_shortname: "w0sephiroth"
 
 # Build settings

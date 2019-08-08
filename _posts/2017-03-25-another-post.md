@@ -7,6 +7,8 @@ tags: test
 ---
 I have some text.
 
+I have some <font color=red>red text</font>.
+
 I want some _italics_.
 
 I want some **bold**.

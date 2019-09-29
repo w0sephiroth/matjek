@@ -36,6 +36,8 @@ disqus_shortname: "w0sephiroth"
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
 plugins:
   - jekyll-feed
   - jekyll-paginate
